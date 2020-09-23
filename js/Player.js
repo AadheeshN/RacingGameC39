@@ -32,4 +32,9 @@ class Player {
       allPlayers = data.val();
     })
   }
+
+  removePlayers() {
+    var playersRef = database.ref("players");
+    playersRef.remove(); 
+  }
 }
